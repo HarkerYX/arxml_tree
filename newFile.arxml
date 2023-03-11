@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00049.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>RootPack</SHORT-NAME>
+      <ELEMENTS/>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>NewPack</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>signals</SHORT-NAME>
+              <ELEMENTS>
+                <I-SIGNAL>
+                  <SHORT-NAME>sig1</SHORT-NAME>
+                  <DATA-TYPE-POLICY></DATA-TYPE-POLICY>
+                  <LENGTH>0</LENGTH>
+                </I-SIGNAL>
+              </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+              <SHORT-NAME>systemsignals</SHORT-NAME>
+              <ELEMENTS>
+                <SYSTEM-SIGNAL>
+                  <SHORT-NAME>syssig1</SHORT-NAME>
+                  <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+                </SYSTEM-SIGNAL>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+          <ELEMENTS>
+            <APPLICATION-SW-COMPONENT-TYPE>
+              <SHORT-NAME>newcomponent</SHORT-NAME>
+              <PORTS>
+                <P-PORT-PROTOTYPE>
+                  <SHORT-NAME>outPort</SHORT-NAME>
+                </P-PORT-PROTOTYPE>
+              </PORTS>
+            </APPLICATION-SW-COMPONENT-TYPE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
